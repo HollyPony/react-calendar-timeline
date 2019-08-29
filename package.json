@@ -93,7 +93,7 @@
   },
   "peerDependencies": {
     "interactjs": "^1.3.4",
-    "moment": "*",
+    "date-fns": "^2.0.1",
     "prop-types": "^15.6.2",
     "react": ">=16.3",
     "react-dom": ">=16.3"
@@ -111,6 +111,7 @@
     "babel-plugin-react-remove-properties": "^0.3.0",
     "cross-env": "^5.1.4",
     "css-loader": "~0.26.0",
+    "date-fns": "^2.0.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "eslint": "^4.16.0",

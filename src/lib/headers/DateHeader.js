@@ -5,6 +5,9 @@ import CustomHeader from './CustomHeader'
 import { getNextUnit } from '../utility/calendar'
 import { defaultHeaderFormats } from '../default-config'
 import Interval from './Interval'
+import {
+  format as _format,
+} from 'date-fns'
 
 class DateHeader extends React.Component {
   static propTypes = {
@@ -160,7 +163,7 @@ function formatLabel(
   } else {
     format = formatOptions[unit]['short']
   }
-  return timeStart.format(format)
+  return _format(timeStart, format)
 }
 
 export default DateHeaderWrapper
