@@ -45,7 +45,7 @@ class DateHeader extends React.Component {
     const { labelFormat } = this.props
     if (typeof labelFormat === 'string') {
       const startTime = interval[0]
-      return startTime.format(labelFormat)
+      return _format(startTime, labelFormat)
     } else if (typeof labelFormat === 'function') {
       return labelFormat(interval, unit, labelWidth)
     } else {
